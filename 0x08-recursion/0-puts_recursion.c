@@ -1,12 +1,16 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * main checks the code
- *
- * Return 0 at end.
- */
-int main(void)
+ * _puts_recursion - prints a string with recursion
+ * @s: the string to print
+ * Return: None
+**/
+void _puts_recursion(char *s)
 {
-	_puts_recursion("Puts with recursion");
-	return (0);
+	if (*s)
+	{
+		printf("%c", *s);
+		_puts_recursion(s + 1);
+	}
+	else
+	printf("\n");
 }

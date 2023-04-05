@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * function _print_rev_recursion prints a string with recursion
- * 
- * No return
+ * _print_rev_recursion - prints a string with recursion
+ * @s: the string to print
+ * Return: None
 **/
 void _print_rev_recursion(char *s)
 {
